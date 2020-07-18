@@ -1,0 +1,19 @@
+Terminologies in Android 
+1)Activity ->Class in java
+2)Layout ->Similar to HtMl Page 
+3)View ->In Android Every thing is a View 
+example(Button,Text etc....)
+
+DBP :-num
+HR :-num
+MU :-String 
+SBP :-num
+date :- DateAndtime
+healthyRange:- String
+measuredBy:-String
+rangeSbpHealthyMax :- num
+rangeSbpHighMin :-num
+
+
+blood Sugar :-242,243,244
+blood pressure :-237,238,239

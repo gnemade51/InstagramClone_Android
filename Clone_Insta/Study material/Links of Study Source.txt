@@ -1,0 +1,6 @@
+Android Community page : https://developer.android.com/
+Java : https://www.javatpoint.com/java-tutorial
+SQlite Db Storage : https://developer.android.com/training/data-storage/sqlite#java
+Accessing camera and Storing Data : https://guides.codepath.com/android/Accessing-the-Camera-and-Stored-Media
+Recycler View :https://developer.android.com/guide/topics/ui/layout/recyclerview
+View Pager :https://developer.android.com/training/animation/screen-slide
