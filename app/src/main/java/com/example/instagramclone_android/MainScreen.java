@@ -1,10 +1,8 @@
-package com.example.instagramclone;
+package com.example.instagramclone_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.LinearLayout;
 
 public class MainScreen extends AppCompatActivity {

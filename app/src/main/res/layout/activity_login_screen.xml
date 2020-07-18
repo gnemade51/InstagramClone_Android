@@ -1,167 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#fff"
-    android:id="@+id/login_screen_layout">
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LoginScreen">
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@drawable/insta_txt"
-        android:layout_marginTop="50dp"
+        android:layout_height="80dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/insta_txt" />
 
     <LinearLayout
-        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/rect"
-        android:padding="5dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:src="@drawable/fb"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Continue with facebook"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#FEFFFF"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            />
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/fb_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Continue with Facebook"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
-    <!--	com.google.android.material.textfield.TextInputLayout
--->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        >
+        android:orientation="horizontal"
+        android:weightSum="10">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="2dp"
+            android:layout_gravity="center"
             android:layout_weight="4"
-            android:background="#CCC6C6"
-            android:layout_gravity="center"/>
+            android:background="#D5D2D2" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="20dp"
             android:layout_weight="2"
-            android:text="OR"
             android:gravity="center"
-            />
+            android:text="OR"
+            android:textSize="15dp"/>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="2dp"
+            android:layout_gravity="center"
             android:layout_weight="4"
-            android:background="#CCC6C6"
-            android:layout_gravity="center"/>
+            android:background="#D5D2D2" />
 
     </LinearLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="55dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:gravity="bottom">
-
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:hint="Username"
+            android:textSize="15dp"
             android:padding="10dp"
-            android:background="@drawable/rectangle_box"
-            />
+            android:background="@drawable/rectangle_textbox"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:gravity="bottom"
         app:passwordToggleEnabled="true">
-
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:hint="Password"
+            android:textSize="15dp"
             android:padding="10dp"
             android:inputType="textPassword"
-            android:background="@drawable/rectangle_box"
-            />
+            android:background="@drawable/rectangle_textbox"/>
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.checkbox.MaterialCheckBox
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:text="Save login info"
-        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:textColor="#A5A2A2"
-        />
-
+        android:textColor="#222121"/>
     <Button
         android:id="@+id/button"
-
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
         android:layout_marginRight="30dp"
-        android:background="@drawable/rect"
-        android:text="Login In"
-        android:textAllCaps="false"
-        android:textColor="#ffffff" />
-
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rectangle"
+        android:text="Log In"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Forget Password?"
-        android:textColor="#2196F3"
+        android:text="Forgot password?"
+        android:textSize="15dp"
+        android:textColor="#4267B2"
         android:gravity="center"
-        android:layout_marginTop="10dp"/>
-    <LinearLayout
+        android:layout_marginTop="30dp"/>
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="10"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="6"
-            android:text="Don't have a account"
-            android:gravity="end"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:text="Sign up"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp"/>
-
-    </LinearLayout>
-
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="10"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rectangle_normal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Don't have an account?"
+                android:textSize="15dp"
+                android:gravity="end"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Sign up"
+                android:textSize="15dp"
+                android:textColor="#2B3885"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

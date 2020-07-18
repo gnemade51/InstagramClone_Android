@@ -1,4 +1,4 @@
-package com.example.instagramclone;
+package com.example.instagramclone_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
