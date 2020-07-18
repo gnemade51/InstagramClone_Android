@@ -30,94 +30,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "androidx.appcompat:appcompat:1.1.0"
-
-
-
     //noinspection GradleCompatible
-
-
-
-
     implementation 'com.google.android.material:material:1.3.0-alpha01'
     //noinspection GradleCompatible
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-    /*implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
-    implementation 'com.google.android.material:material:1.1.0-alpha09'*/
-   /* implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
-    implementation 'androidx.cardview:cardview:1.0.0'
-    testImplementation 'junit:junit:4.13-beta-3'
-    androidTestImplementation 'androidx.test:runner:1.3.0-alpha02'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha02'
-    *//*  implementation 'com.android.support:design:28.1.1'
-    implementation 'com.android.support:support-v4:28.1.1'*//*
-
-//LOGIN
-    implementation 'com.squareup.retrofit2:converter-scalars:2.6.1'
-    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
-    //  implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.11'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0-beta03'
-
-
-//Image
-    implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.41"
-    implementation 'de.hdodenhof:circleimageview:3.0.1'
-//firebase Cloud
-
-    *//*  implementation 'com.google.firebase:firebase-storage:19.0.0'
-    implementation 'com.google.firebase:firebase-auth:19.0.0'*//*
-
-    //Internet Connection
-    implementation 'com.treebo:internetavailabilitychecker:1.0.4'
-    // Gson library
-    implementation 'com.google.code.gson:gson:2.8.5'
-    //Universal Image Loader
-    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-    //Image Zooming Library
-    implementation 'com.bogdwellers:pinchtozoom:0.1'
-
-    //Library for biometric Authentication
-    implementation 'com.multidots:fingerprint-auth:1.0'
-
-    //QR
-    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
-    implementation 'com.journeyapps:zxing-android-legacy:2.0.1@aar'
-    implementation 'com.google.zxing:core:3.4.0'
-
-    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
-    *//*  implementation 'com.google.firebase:firebase-core:17.2.0'
-    implementation 'com.google.firebase:firebase-messaging:20.0.0'*//*
-    implementation 'com.madgag.spongycastle:core:1.58.0.0'
-    implementation 'org.mockito:android:2.20.0'
-    // implementation 'com.android.support:design:28.0.0'
-
-    implementation 'androidx.test.espresso:espresso-core:3.3.0-alpha02'
-    implementation 'androidx.annotation:annotation:1.1.0'
-    //implementation 'io.cucumber:cucumber-android:4.3.0'
-    implementation 'info.cukes:cucumber-junit:1.2.5'
-    implementation 'info.cukes:cucumber-android:1.2.5'
-    implementation 'info.cukes:cucumber-picocontainer:1.2.5'
-    implementation 'androidx.annotation:annotation:1.1.0'
-
-    implementation 'androidx.navigation:navigation-fragment:2.2.0-alpha01'
-    implementation 'androidx.navigation:navigation-ui:2.2.0-alpha01'
-
-
-    // For Kotlin use lifecycle-reactivestreams-ktx
-    //testImplementation "androidx.arch.core:core-testing:$lifecycle_version"
-
-    // implementation of View Pager
-    implementation 'com.google.android.material:material:1.1.0-alpha09'
-    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta03'
-
-    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.0'*/
-
-
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
 
 }

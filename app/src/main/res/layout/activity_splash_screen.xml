@@ -17,12 +17,12 @@
         <ImageView
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:src="@drawable/insta_icon"
+            android:src="@drawable/insta_logo_hollow"
            />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:src="@drawable/insta_txt"
+            android:src="@drawable/insta_text"
 
             />
 

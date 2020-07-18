@@ -18,31 +18,31 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/cam"
+            android:src="@drawable/camera"
             />
         <ImageView
             android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/insta_txt"
+            android:src="@drawable/insta_text"
             />
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/send"
+            android:src="@drawable/messages"
             />
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" />
-
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/my_recycler_view"
-            android:scrollbars="horizontal"
+        android:fillViewport="false">
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="96dp"

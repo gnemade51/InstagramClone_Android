@@ -16,7 +16,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="20dp"
-        android:src="@drawable/insta_txt" />
+        android:src="@drawable/insta_text" />
 
     <LinearLayout
         android:layout_width="match_parent"
