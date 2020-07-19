@@ -15,7 +15,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
         <ImageView
-            android:layout_width="30dp"
+            android:layout_width="40dp"
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/camera"
