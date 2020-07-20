@@ -14,24 +14,35 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp">
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/profile_image"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/dp" />
+            android:src="@drawable/dp" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_profile_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/dp"
+            app:civ_border_color="#E91E63"
+            app:civ_border_width="2dp" />
 
         <TextView
-            android:id="@+id/username_tv"
+            android:id="@+id/post_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@id/profile_image"
+            android:layout_toRightOf="@id/post_profile_image"
             android:text="Gaurav"
-            android:textColor="@color/black"
-            android:textSize="12sp" />
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
     </RelativeLayout>
 
     <FrameLayout
@@ -48,11 +59,11 @@
             android:visibility="gone" />
 
         <ImageView
-            android:id="@+id/image_of_post"
+            android:id="@+id/post_image"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/dp"
+            android:src="@drawable/post"
             android:visibility="visible" />
 
     </FrameLayout>
@@ -97,11 +108,13 @@
         android:paddingLeft="5dp">
 
         <TextView
-            android:id="@+id/like_numbers_tv"
+            android:id="@+id/post_likes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="1"
             android:text="64 likes"
+            android:textSize="14dp"
+            android:textStyle="bold"
             android:textColor="@color/black" />
 
         <RelativeLayout
@@ -116,16 +129,17 @@
                 android:layout_alignParentLeft="true"
                 android:maxLines="1"
                 android:text="username"
+                android:textStyle="bold"
                 android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="3dp"
                 android:layout_toRightOf="@+id/description_username"
                 android:maxLines="1"
-                android:text="description" />
+                android:text="Description" />
         </RelativeLayout>
 
         <TextView

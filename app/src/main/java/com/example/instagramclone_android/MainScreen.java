@@ -22,6 +22,9 @@ public class MainScreen extends AppCompatActivity {
         String[] usernames = {"gaurav","nihar","kunal","ajinkya","sakshi","nikita","aaditya","sandeep","mihir"};
         recycler_view_story_section.setAdapter(new StoryAdapter(usernames));
 
+        RecyclerView recycler_view_post_section = (RecyclerView) findViewById(R.id.recycler_view_post_section);
+        recycler_view_post_section.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        recycler_view_post_section.setAdapter(new PostAdapter(usernames));
 
     }
 
