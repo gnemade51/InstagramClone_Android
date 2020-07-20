@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_gravity="top">
+        android:layout_gravity="top"
+        android:background="#e7e7e7">
         <ImageView
             android:id="@+id/add_new_story"
             android:layout_width="30dp"
@@ -21,7 +22,7 @@
             android:src="@drawable/camera" />
         <ImageView
             android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:src="@drawable/insta_text" />
@@ -132,10 +133,13 @@
     </ScrollView>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="96dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="-408dp"
-        android:layout_marginTop="60dp"
+        android:id="@+id/story_circle_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="84dp"
         android:src="@drawable/dp"
         app:civ_border_width="2dp"
         app:civ_border_color="#E91E63" />-->

@@ -29,7 +29,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/profile_image"
-            android:text="Mohammad"
+            android:text="Gaurav"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </RelativeLayout>
