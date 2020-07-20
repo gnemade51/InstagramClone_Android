@@ -8,32 +8,119 @@
     android:orientation="vertical"
     tools:context=".MainScreen"
     android:background="#fff">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:layout_height="50dp"
+        android:layout_gravity="top">
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/camera"
-            />
-        <ImageView
-            android:layout_width="320dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:src="@drawable/insta_text"
-            />
-        <ImageView
+            android:id="@+id/add_new_story"
             android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/messages"
-            />
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/camera" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/insta_text" />
+        <ImageView
+            android:id="@+id/direct"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/messages" />
     </LinearLayout>
 
-    <ScrollView
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_story_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_post_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#e7e7e7">
+
+        <ImageView
+            android:id="@+id/home_tab"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/home_hollow" />
+
+
+        <ImageView
+            android:id="@+id/search_tab"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/search_hollow" />
+
+        <ImageView
+            android:id="@+id/add_tab"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/newpost_hollow" />
+
+        <ImageView
+            android:id="@+id/activity_tab"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/likes_hollow" />
+
+        <ImageView
+            android:id="@+id/profile_tab"
+            android:layout_width="25dp"
+            android:scaleY="0.9"
+            android:scaleX="0.9"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/profile_hollow" />
+
+
+    </LinearLayout>
+
+
+
+
+    <!--<ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fillViewport="false">
@@ -49,9 +136,9 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="-408dp"
         android:layout_marginTop="60dp"
-        android:src="@drawable/mainscr"
+        android:src="@drawable/dp"
         app:civ_border_width="2dp"
-        app:civ_border_color="#E91E63" />
+        app:civ_border_color="#E91E63" />-->
 
 
 

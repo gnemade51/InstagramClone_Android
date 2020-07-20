@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">InstagramClone</string>
+
+    <string name="test"></string>
+    <string name="styled_text">Plain, <b>bold</b>, <i>italic</i>, <b><i>bold-italic</i></b></string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login</string>
+    <string name="sign_up_description">Sign up to see photos and videos\nfrom your friends.</string>
+    <string name="view_comments"><b>View comments</b></string>
 </resources>
