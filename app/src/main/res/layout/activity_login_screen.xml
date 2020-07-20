@@ -123,7 +123,7 @@
         android:layout_marginRight="30dp"
         android:textColor="#222121"/>
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"

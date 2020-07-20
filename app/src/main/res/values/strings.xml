@@ -7,4 +7,6 @@
     <string name="login">Login</string>
     <string name="sign_up_description">Sign up to see photos and videos\nfrom your friends.</string>
     <string name="view_comments"><b>View comments</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,11 +1,14 @@
 package com.example.instagramclone_android;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.LinearLayout;
+
 
 public class MainScreen extends AppCompatActivity {
     LinearLayout main_screen_layout;
@@ -17,15 +20,17 @@ public class MainScreen extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         setContentView(R.layout.activity_main_screen);
-        RecyclerView recycler_view_story_section = (RecyclerView) findViewById(R.id.recycler_view_story_section);
-        recycler_view_story_section.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        String[] usernames = {"gaurav","nihar","kunal","ajinkya","sakshi","nikita","aaditya","sandeep","mihir"};
-        recycler_view_story_section.setAdapter(new StoryAdapter(usernames));
-
-        RecyclerView recycler_view_post_section = (RecyclerView) findViewById(R.id.recycler_view_post_section);
-        recycler_view_post_section.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        recycler_view_post_section.setAdapter(new PostAdapter(usernames));
-
+        Fragment home_fragment;
+        home_fragment = new HomeFragment();
+        loadFragment(home_fragment);
+    }
+    private void loadFragment(Fragment home_fragment) {
+        // load fragment
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        //frame_container is your layout name in xml file
+        transaction.replace(R.id.fragment_container, home_fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
 
