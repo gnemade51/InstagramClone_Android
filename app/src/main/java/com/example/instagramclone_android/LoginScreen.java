@@ -14,9 +14,6 @@ public class LoginScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(getSupportActionBar()!=null){
-            getSupportActionBar().hide();
-        }
         setContentView(R.layout.activity_login_screen);
         Button button=(Button)findViewById(R.id.login_button);
         button.setOnClickListener(new View.OnClickListener()

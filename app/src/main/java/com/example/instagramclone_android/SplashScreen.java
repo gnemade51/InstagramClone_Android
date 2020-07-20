@@ -14,9 +14,6 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(getSupportActionBar()!=null){
-            getSupportActionBar().hide();
-        }
         setContentView(R.layout.activity_splash_screen);
         splash_screen_layout=(LinearLayout)findViewById(R.id.splash_screen_layout);
         splash_screen_layout.setOnClickListener(new View.OnClickListener() {
