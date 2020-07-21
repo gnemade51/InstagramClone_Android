@@ -13,6 +13,7 @@ import android.os.PersistableBundle;
 import android.widget.ImageView;
 
 import com.example.instagramclone_android.Fragments.HomeFragment;
+import com.example.instagramclone_android.Fragments.ProfileFragment;
 import com.example.instagramclone_android.R;
 
 
@@ -77,8 +78,9 @@ public class MainScreen extends AppCompatActivity {
             public void onClick(View v) {
                 if (changeBackOtherImageResources(PROFILE_TAB_ID)) {
                     profileButton.setImageResource(R.drawable.profile_fill);
-                    /*ProfileFragment profileFragment = ProfileFragment.newInstance(MainActivity.currentUserId, ProfileType.LOGGED_IN_USER_PROFILE);
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, profileFragment).commit();*/
+                    profileButton.setImageResource(R.drawable.profile_fill);
+                    ProfileFragment profileFragment = ProfileFragment.newInstance();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, profileFragment).commit();
                 }
             }
         });

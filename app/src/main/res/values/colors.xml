@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#CECECE</color>
     <color name="colorAccent">#1E93F1</color>
     <color name="black">#000</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#fff</color>
 
     <color name="my_family_name_color">#fff</color>
     <color name="android_name_color">#4fb652</color>
