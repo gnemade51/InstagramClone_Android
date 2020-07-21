@@ -9,17 +9,42 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+<<<<<<< HEAD
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+=======
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
+>>>>>>> 6d79e5d8589baed2e7762b3c0bd203346847ef50
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 
 public class MainScreen extends AppCompatActivity {
+<<<<<<< HEAD
+    LinearLayout main_screen_layout;
+    ImageView ib1;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+        setContentView(R.layout.activity_main_screen);
+        RecyclerView recycler_view_story_section = (RecyclerView) findViewById(R.id.recycler_view_story_section);
+        recycler_view_story_section.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        String[] usernames = {"gaurav", "nihar", "kunal", "ajinkya", "sakshi", "nikita", "aaditya", "sandeep", "mihir"};
+        recycler_view_story_section.setAdapter(new StoryAdapter(usernames));
+=======
     public static final int DEFAULT_TAB_ID = -1;
     public static final int HOME_TAB_ID = 0;
     public static final int ADD_IMAGE_TAB_ID = 1;
@@ -166,11 +191,14 @@ public class MainScreen extends AppCompatActivity {
         switch (requestCode) {
             case UPLOAD_REQ:
                 if (requestCode == RESULT_OK) {
+>>>>>>> 6d79e5d8589baed2e7762b3c0bd203346847ef50
 
                 }
                 break;
         }
 
+<<<<<<< HEAD
+=======
     }
    /* private void loadFragment(Fragment home_fragment) {
         // load fragment
@@ -180,7 +208,19 @@ public class MainScreen extends AppCompatActivity {
         transaction.addToBackStack(null);
         transaction.commit();
     }*/
+>>>>>>> 6d79e5d8589baed2e7762b3c0bd203346847ef50
 
+        ib1 = (ImageView) findViewById(R.id.camera);
 
+        ib1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentLoadNewActivity = new Intent(MainScreen.this, CameraScreen.class);
+                startActivity(intentLoadNewActivity);
+            }
+        });
+    }
 }
+
+
 

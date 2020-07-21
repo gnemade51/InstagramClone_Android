@@ -7,8 +7,15 @@
     <string name="login">Login</string>
 
     <string name="view_comments"><b>View comments</b></string>
+<<<<<<< HEAD
+    <string name="photo">photo</string>
+=======
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+<<<<<<< HEAD
     <string name="sign_up_description">Sign up to see photos and videos\nfrom your friends.</string>
     <string name="sign_up_terms">By signing up, you agree to our\n<b>Terms</b>, <b>Data Policy</b> and <b>Cookies</b>\n<b>Policy.</b>.</string>
+=======
+>>>>>>> 6d79e5d8589baed2e7762b3c0bd203346847ef50
+>>>>>>> 7b26d66944eefdf7b5cc7d774cfa33ec19135e26
 </resources>
