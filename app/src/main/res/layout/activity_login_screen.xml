@@ -87,6 +87,7 @@
         android:layout_marginRight="30dp"
         android:gravity="bottom">
         <EditText
+            android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="Username"
@@ -105,6 +106,7 @@
         android:gravity="bottom"
         app:passwordToggleEnabled="true">
         <EditText
+            android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="Password"
