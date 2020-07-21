@@ -43,7 +43,7 @@ public class MainScreen extends AppCompatActivity {
         pm = getPackageManager();
         cr = getContentResolver();
         fm = getSupportFragmentManager();
-        addButton = findViewById(R.id.camera);
+        addButton = findViewById(R.id.new_post);
         homeButton = findViewById(R.id.home_tab);
         profileButton = findViewById(R.id.profile_tab);
         searchButton = findViewById(R.id.search_tab);
@@ -64,12 +64,8 @@ public class MainScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (changeBackOtherImageResources(ADD_IMAGE_TAB_ID)) {
-                    /*addButton.setImageResource(R.drawable.plus_icon_fill);
-                    AddImageFragment addImageFragment = new AddImageFragment();
-                    getSupportFragmentManager().beginTransaction().addToBackStack(null);
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, addImageFragment).commit();
-                    Intent intent = new Intent(getApplicationContext(), UploadActivity.class);
-                    startActivityForResult(intent, UPLOAD_REQ);*/
+                    Intent intent = new Intent(MainScreen.this, NewPostScreen.class);
+                    startActivityForResult(intent, 1);
                 }
             }
         });

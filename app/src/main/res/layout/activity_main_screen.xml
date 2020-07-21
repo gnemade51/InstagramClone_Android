@@ -13,64 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
-    <!--<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="top"
-        android:background="#e7e7e7">
-        <ImageView
-            android:id="@+id/add_new_story"
-            android:layout_width="30dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:src="@drawable/camera" />
-        <ImageView
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:src="@drawable/insta_text" />
-        <ImageView
-            android:id="@+id/direct"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/messages" />
-    </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" >
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:focusableInTouchMode="true"
-                android:orientation="vertical">
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_view_story_section"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp">
-
-                </androidx.recyclerview.widget.RecyclerView>
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_view_post_section"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="4dp">
-
-                </androidx.recyclerview.widget.RecyclerView>
-            </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
-    </FrameLayout>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -95,7 +38,7 @@
             android:src="@drawable/search_hollow" />
 
         <ImageView
-            android:id="@+id/camera"
+            android:id="@+id/new_post"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center_vertical"
@@ -119,31 +62,11 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:src="@drawable/profile_hollow" />
-<!--        <Button-->
-<!--            android:id="@+id/Button01"-->
-<!--            android:layout_width="25dp"-->
-<!--            android:layout_height="25dp"-->
-<!--            android:layout_gravity="center_vertical"-->
-<!--            android:layout_weight="1"-->
-<!--            tools:context="dev.edmt.takepicturecamera.MainActivity"/>-->
 
 
     </LinearLayout>
 
-
-
-    <!--<ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="false">
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </androidx.recyclerview.widget.RecyclerView>
-
-    </ScrollView>
-
-    <de.hdodenhof.circleimageview.CircleImageView
+ <!--   <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/story_circle_image"
         android:layout_width="70dp"
         android:layout_height="70dp"
@@ -154,10 +77,5 @@
         android:src="@drawable/dp"
         app:civ_border_width="2dp"
         app:civ_border_color="#E91E63" />-->
-
-
-
-
-
 
 </LinearLayout>
