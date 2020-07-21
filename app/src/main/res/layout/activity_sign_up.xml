@@ -8,8 +8,7 @@
     android:background="#fff"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".LoginScreen">
-
+    tools:context=".SignUpActivity">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -17,12 +16,19 @@
         android:layout_marginTop="50dp"
         android:layout_marginRight="20dp"
         android:src="@drawable/insta_text" />
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="3"
+        android:paddingBottom="4dp"
+        android:text="@string/sign_up_description"
+        android:textSize="16dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/rectangle"
         android:orientation="horizontal">
@@ -39,18 +45,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            android:text="Continue with Facebook"
+            android:text="Sign Up with Facebook"
             android:textColor="#fff"
             android:textSize="15dp"
             android:textStyle="bold" />
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="30dp"
         android:orientation="horizontal"
         android:weightSum="10">
@@ -81,7 +86,39 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="bottom">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Mobile Number or Email"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_textbox"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="bottom">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Full Name"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_textbox"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:gravity="bottom">
@@ -94,7 +131,6 @@
             android:background="@drawable/rectangle_textbox"/>
 
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -113,24 +149,15 @@
             android:background="@drawable/rectangle_textbox"/>
 
     </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.checkbox.MaterialCheckBox
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:text="Save login info"
-        android:textSize="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:textColor="#222121"/>
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/signup_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rectangle"
-        android:text="Log In"
+        android:text="Sign Up"
         android:textColor="#fff"
         android:textSize="15dp"
         android:textStyle="bold"
@@ -138,11 +165,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Forgot password?"
-        android:textSize="15dp"
-        android:textColor="#0195f7"
+        android:layout_marginTop="5dp"
         android:gravity="center"
-        android:layout_marginTop="30dp"/>
+        android:maxLines="3"
+        android:paddingBottom="4dp"
+        android:text="@string/sign_up_terms"
+        android:textSize="16dp" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -157,16 +185,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-                android:text="Don't have an account?"
+                android:text="Already have an account?"
                 android:textSize="15dp"
                 android:gravity="end"
                 android:layout_gravity="center_vertical"/>
             <TextView
-                android:id="@+id/signup_text"
+                android:id="@+id/login_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:text="Sign up"
+                android:text="Log In"
                 android:textSize="15dp"
                 android:textColor="#08345e"
                 android:textStyle="bold"
@@ -174,5 +202,4 @@
                 android:layout_gravity="center_vertical"/>
         </LinearLayout>
     </RelativeLayout>
-
 </LinearLayout>

@@ -9,16 +9,17 @@
         android:roundIcon="@mipmap/mainicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.instagramclone_android.MainScreen"></activity>
-        <activity android:name="com.example.instagramclone_android.LoginScreen" />
-        <activity android:name="com.example.instagramclone_android.SplashScreen">
+        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".MainScreen" />
+        <activity android:name=".LoginScreen" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.instagramclone_android.MainActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

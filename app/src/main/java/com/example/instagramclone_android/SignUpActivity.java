@@ -8,37 +8,36 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class LoginScreen extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
     private static final int SIGN_UP_REQUEST_CODE = 1;
-    private Button login;
-    private TextView signUp;
+    private Button signUp;
+    private TextView login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_screen);
+        setContentView(R.layout.activity_sign_up);
         initials();
         clickListeners();
     }
     private void initials() {
-        signUp = findViewById(R.id.signup_text);
-        login = findViewById(R.id.login_button);
+        login = findViewById(R.id.login_text);
+        signUp = findViewById(R.id.signup_button);
     }
     private void clickListeners() {
-        signUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginScreen.this, SignUpActivity.class);
-                startActivityForResult(intent, 1);
-            }
-        });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginScreen.this, MainScreen.class);
+                Intent intent = new Intent(SignUpActivity.this, LoginScreen.class);
+                startActivityForResult(intent, 1);
+            }
+        });
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpActivity.this, MainScreen.class);
                 startActivityForResult(intent, 1);
             }
         });
