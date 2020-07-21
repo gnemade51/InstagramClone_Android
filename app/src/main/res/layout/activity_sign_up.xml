@@ -31,7 +31,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/rectangle"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/fb1">
 
         <ImageView
             android:layout_width="30dp"
@@ -48,7 +49,8 @@
             android:text="Sign Up with Facebook"
             android:textColor="#fff"
             android:textSize="15dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:id="@+id/fb" />
 
     </LinearLayout>
     <LinearLayout

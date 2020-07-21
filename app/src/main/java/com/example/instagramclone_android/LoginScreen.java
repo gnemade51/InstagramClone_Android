@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -15,6 +17,7 @@ public class LoginScreen extends AppCompatActivity {
     private static final int SIGN_UP_REQUEST_CODE = 1;
     private Button login;
     private TextView signUp;
+    private LinearLayout facebook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class LoginScreen extends AppCompatActivity {
     private void initials() {
         signUp = findViewById(R.id.signup_text);
         login = findViewById(R.id.login_button);
+        facebook = findViewById(R.id.fb);
     }
     private void clickListeners() {
         signUp.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +44,15 @@ public class LoginScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginScreen.this, MainScreen.class);
                 startActivityForResult(intent, 1);
+            }
+        });
+        facebook.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Uri uri = Uri.parse("http://facebook.com/");
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
         });
     }
