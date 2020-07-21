@@ -11,11 +11,7 @@
         android:roundIcon="@mipmap/mainicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
         <activity android:name=".SignUpActivity"></activity>
-=======
-        <activity android:name=".CameraScreen"></activity>
->>>>>>> 7b26d66944eefdf7b5cc7d774cfa33ec19135e26
         <activity android:name=".MainScreen" />
         <activity android:name=".LoginScreen" />
         <activity android:name=".SplashScreen">
@@ -25,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
