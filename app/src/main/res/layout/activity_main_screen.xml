@@ -90,7 +90,7 @@
             android:src="@drawable/search_hollow" />
 
         <ImageView
-            android:id="@+id/add_tab"
+            android:id="@+id/camera"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center_vertical"
@@ -114,10 +114,16 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:src="@drawable/profile_hollow" />
+<!--        <Button-->
+<!--            android:id="@+id/Button01"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_weight="1"-->
+<!--            tools:context="dev.edmt.takepicturecamera.MainActivity"/>-->
 
 
     </LinearLayout>
-
 
 
 
