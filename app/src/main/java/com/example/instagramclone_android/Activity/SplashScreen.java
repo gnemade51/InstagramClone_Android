@@ -1,4 +1,4 @@
-package com.example.instagramclone_android;
+package com.example.instagramclone_android.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.example.instagramclone_android.R;
 
 public class SplashScreen extends AppCompatActivity {
     LinearLayout splash_screen_layout;
@@ -19,7 +21,7 @@ public class SplashScreen extends AppCompatActivity {
         splash_screen_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(SplashScreen.this,LoginScreen.class);
+                Intent intent= new Intent(SplashScreen.this, LoginScreen.class);
                 startActivity(intent);
 
             }

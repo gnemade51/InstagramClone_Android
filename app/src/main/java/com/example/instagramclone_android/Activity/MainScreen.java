@@ -1,4 +1,4 @@
-package com.example.instagramclone_android;
+package com.example.instagramclone_android.Activity;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,9 @@ import android.content.ContentResolver;
 import android.content.pm.PackageManager;
 import android.os.PersistableBundle;
 import android.widget.ImageView;
+
+import com.example.instagramclone_android.Fragments.HomeFragment;
+import com.example.instagramclone_android.R;
 
 
 public class MainScreen extends AppCompatActivity {

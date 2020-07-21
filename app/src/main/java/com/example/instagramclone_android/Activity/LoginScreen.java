@@ -1,4 +1,4 @@
-package com.example.instagramclone_android;
+package com.example.instagramclone_android.Activity;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,11 +7,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.instagramclone_android.R;
 
 public class LoginScreen extends AppCompatActivity {
     private static final int SIGN_UP_REQUEST_CODE = 1;

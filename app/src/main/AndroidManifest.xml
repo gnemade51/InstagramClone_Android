@@ -11,11 +11,12 @@
         android:roundIcon="@mipmap/mainicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewPostScreen"></activity>
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".MainScreen" />
-        <activity android:name=".LoginScreen" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Activity.CommentScreen"></activity>
+        <activity android:name=".Activity.NewPostScreen" />
+        <activity android:name=".Activity.SignUpActivity" />
+        <activity android:name=".Activity.MainScreen" />
+        <activity android:name=".Activity.LoginScreen" />
+        <activity android:name=".Activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

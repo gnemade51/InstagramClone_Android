@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NewPostScreen"
+    tools:context=".Activity.NewPostScreen"
     android:background="#fff">
     <FrameLayout
         android:id="@+id/newpost_fragment_container"

@@ -1,8 +1,10 @@
-package com.example.instagramclone_android;
+package com.example.instagramclone_android.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.instagramclone_android.R;
 
 public class NewPostScreen extends AppCompatActivity {
 

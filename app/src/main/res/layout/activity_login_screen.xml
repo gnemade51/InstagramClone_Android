@@ -8,7 +8,7 @@
     android:background="#fff"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".LoginScreen">
+    tools:context=".Activity.LoginScreen">
 
     <ImageView
         android:layout_width="match_parent"

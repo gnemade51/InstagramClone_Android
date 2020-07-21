@@ -1,4 +1,4 @@
-package com.example.instagramclone_android;
+package com.example.instagramclone_android.Fragments;
 
 import android.os.Bundle;
 
@@ -9,6 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.instagramclone_android.Adapters.PostAdapter;
+import com.example.instagramclone_android.R;
+import com.example.instagramclone_android.Adapters.StoryAdapter;
 
 
 /**
