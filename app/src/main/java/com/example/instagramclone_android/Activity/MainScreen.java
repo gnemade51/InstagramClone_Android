@@ -12,6 +12,7 @@ import android.content.pm.PackageManager;
 import android.os.PersistableBundle;
 import android.widget.ImageView;
 
+import com.example.instagramclone_android.Fragments.ActivityPageFragment;
 import com.example.instagramclone_android.Fragments.HomeFragment;
 import com.example.instagramclone_android.Fragments.ProfileFragment;
 import com.example.instagramclone_android.R;
@@ -101,9 +102,8 @@ public class MainScreen extends AppCompatActivity {
             public void onClick(View v) {
                 if (changeBackOtherImageResources(ACTIVITIES_TAB_ID)) {
                     activitiesButton.setImageResource(R.drawable.likes_fill);
-                    /*PersonalsFragment personalsFragment = PersonalsFragment.newInstance(PersonalFragmentType.ACTIVITY_FRAGMENT, null);
-                    getSupportFragmentManager().beginTransaction().addToBackStack(null);
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, personalsFragment).commit();*/
+                    ActivityPageFragment activitypageFragment = ActivityPageFragment.newInstance();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, activitypageFragment).commit();
                 }
             }
         });

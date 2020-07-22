@@ -9,6 +9,7 @@
         android:id="@+id/grid_images"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:src="@drawable/posts" />
+        android:src="@drawable/posts"
+        android:layout_marginBottom="1dp"/>
 
 </LinearLayout>
