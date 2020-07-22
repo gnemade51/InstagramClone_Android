@@ -6,7 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.instagramclone_android.Adapters.GridAdapter;
 import com.example.instagramclone_android.R;
 
 /**
@@ -15,6 +18,7 @@ import com.example.instagramclone_android.R;
  * create an instance of this fragment.
  */
 public class ProfileFragment extends Fragment {
+    private RecyclerView recycler_view_grid;
 
     public ProfileFragment() {
     }
@@ -28,13 +32,19 @@ public class ProfileFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState); }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        recycler_view_grid = view.findViewById(R.id.recycler_view_grid);
+        recycler_view_grid.setHasFixedSize(true);
+        recycler_view_grid.setLayoutManager(new GridLayoutManager(view.getContext(),3));
+        recycler_view_grid.setAdapter(new GridAdapter());
         return view;
     }
 }
