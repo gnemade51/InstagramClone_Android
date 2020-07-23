@@ -14,7 +14,7 @@
         <activity
             android:name=".Activity.NewPostScreen"
             android:label="@string/title_activity_new_post_screen"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activity.CommentScreen" />
         <activity android:name=".Activity.SignUpActivity" />
         <activity android:name=".Activity.MainScreen" />
