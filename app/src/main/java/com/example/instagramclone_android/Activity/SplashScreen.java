@@ -216,7 +216,7 @@ public class SplashScreen extends AppCompatActivity {
                     // Thread will sleep for 10 seconds
                     sleep(2000);
 
-                    startActivity(new Intent(getApplicationContext(),MainScreen.class));
+                    startActivity(new Intent(getApplicationContext(),LoginScreen.class));
                     finish();
 
                 } catch (Exception e) {
