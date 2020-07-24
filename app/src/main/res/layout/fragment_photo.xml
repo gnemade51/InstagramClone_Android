@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.VideoFragment"
     android:orientation="vertical"
     android:background="#fff">
+    <FrameLayout
+        android:id="@+id/photo_camera_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+    </FrameLayout>
 
-    <LinearLayout
-        android:id="@+id/toolbar_new_post_screen"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="top"
-        android:background="#e7e7e7">
+        android:background="#e7e7e7"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -31,8 +38,8 @@
             android:layout_weight="8"
             android:textColor="@color/black"/>
 
-    </LinearLayout>
-    <FrameLayout
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--<FrameLayout
         android:id="@+id/camera_container"
         android:layout_width="match_parent"
         android:layout_height="400dp"
@@ -52,19 +59,42 @@
             android:src="@drawable/flash_on">
         </ImageView>
 
-    </FrameLayout>
-    <RelativeLayout
+    </FrameLayout>-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/flip_camera"
+        android:layout_above="@+id/button_container"
+        android:layout_alignParentStart="true">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/flash_on"
+        android:layout_above="@+id/button_container"
+        android:layout_alignParentEnd="true">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/button_container"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="#fff">
         <Button
-            android:id="@+id/capture_button"
+            android:id="@+id/photo_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/photo_button"
-            android:layout_centerInParent="true"/>
+            android:background="@drawable/photo_button"/>
 
-    </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-</LinearLayout>
+
+</RelativeLayout>

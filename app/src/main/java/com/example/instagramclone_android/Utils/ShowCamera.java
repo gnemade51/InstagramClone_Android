@@ -12,19 +12,20 @@ import java.io.IOException;
 import java.util.List;
 
 public class ShowCamera extends SurfaceView implements SurfaceHolder.Callback {
-    Camera camera;
-    SurfaceHolder holder;
+    private Camera mCamera;
+    private SurfaceHolder mSurfaceHolder;
+
     public ShowCamera(Context context, Camera camera) {
         super(context);
-        this.camera = camera;
-        holder = getHolder();
-        holder.addCallback(this);
-
+        this.mCamera = camera;
+        this.mSurfaceHolder = this.getHolder();
+        this.mSurfaceHolder.addCallback(this);
+        this.mSurfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
     }
 
     @Override
     public void surfaceCreated(@NonNull SurfaceHolder surfaceHolder) {
-        Camera.Parameters params = camera.getParameters();
+        Camera.Parameters params = mCamera.getParameters();
 
         List<Camera.Size> sizes = params.getSupportedPictureSizes();
         Camera.Size mSize = null;
@@ -34,18 +35,18 @@ public class ShowCamera extends SurfaceView implements SurfaceHolder.Callback {
         //change orientation of camera
         if(this.getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE){
             params.set("orientation","portrait");
-            camera.setDisplayOrientation(90);
+            mCamera.setDisplayOrientation(90);
             params.setRotation(90);
         }else {
             params.set("orientation","landscape");
-            camera.setDisplayOrientation(0);
+            mCamera.setDisplayOrientation(0);
             params.setRotation(0);
         }
         params.setPictureSize(mSize.width,mSize.height);
-        camera.setParameters(params);
+        mCamera.setParameters(params);
         try {
-            camera.setPreviewDisplay(holder);
-            camera.startPreview();
+            mCamera.setPreviewDisplay(mSurfaceHolder);
+            mCamera.startPreview();
         }catch (IOException e){
             e.printStackTrace();
         }
@@ -53,13 +54,13 @@ public class ShowCamera extends SurfaceView implements SurfaceHolder.Callback {
     }
 
     @Override
-    public void surfaceChanged(@NonNull SurfaceHolder surfaceHolder, int i, int i1, int i2) {
+    public void surfaceChanged(@NonNull SurfaceHolder surfaceHolder, int format, int width, int height) {
 
     }
 
     @Override
     public void surfaceDestroyed(@NonNull SurfaceHolder surfaceHolder) {
-        camera.stopPreview();
-        camera.release();
+        mCamera.stopPreview();
+        mCamera.release();
     }
 }
